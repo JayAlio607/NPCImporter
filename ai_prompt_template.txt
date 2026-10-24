@@ -1,0 +1,28 @@
+I am using a custom Roll20 API script to import D&D 5e stat blocks. I need you to convert the provided monster/NPC stat block into a specific JSON format, append it to the command "!importnpc ", and output it as a single, minified string with absolutely NO line breaks. 
+
+Here is the JSON schema you must follow:
+{
+  "name": "String",
+  "type": "String",
+  "ac": "String (e.g., '15 (natural armor)')",
+  "hp": "String (e.g., '45 (6d8+18)')",
+  "speed": "String",
+  "strength": Integer,
+  "dexterity": Integer,
+  "constitution": Integer,
+  "intelligence": Integer,
+  "wisdom": Integer,
+  "charisma": Integer,
+  "senses": "String",
+  "languages": "String",
+  "challenge": "String (e.g., '2 (450 XP)')",
+  "traits": [
+    {"name": "String", "desc": "String"}
+  ],
+  "actions": [
+    {"name": "String", "desc": "String"}
+  ]
+}
+
+Please format the following stat block into the single-line command:
+[PASTE YOUR STAT BLOCK OR NPC CONCEPT HERE]
