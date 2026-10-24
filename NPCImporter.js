@@ -120,7 +120,7 @@ on('ready', () => {
                 data.traits.forEach(trait => {
                     let row = generateRowID();
                     setAttr(`repeating_npctrait_${row}_name`, trait.name);
-                    setAttr(`repeating_npctrait_${row}_desc`, trait.desc);
+                    setAttr(`repeating_npctrait_${row}_description`, trait.desc); // <-- THIS IS THE FIX
                 });
             }
 
